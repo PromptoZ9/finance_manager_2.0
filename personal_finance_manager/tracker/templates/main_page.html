@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}My Transactions{% endblock %}
+
+{% block content %}
+<h3>My Transactions</h3>
+    <form method="get" class="row my-4" style="align-items: end;">
+        <div class="col-auto">
+        {{ form.transaction_type.label_tag }}
+        {{ form.transaction_type }}
+    </div>
+    <div class="col-auto">
+        {{ form.start_date.label_tag }}
+        {{ form.start_date }}
+    </div>
+    <div class="col-auto">
+        {{ form.end_date.label_tag }}
+        {{ form.end_date }}
+    </div>
+    <div class="col-auto">
+        {{ form.search.label_tag }}
+        {{ form.search }}
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-info">Filter</button>
+    </div>
+    </form>
+    <ul>
+        {% for transaction in transactions %}
+            <li>
+                {{ transaction.date }} - {{ transaction.title }} - {{ transaction.category }} - Rp{{ transaction.amount|floatformat:2 }}
+                <a href="{% url 'transaction_detail' transaction.id %}"class = "mx-3" style="color:rgb(0, 200, 0);">Detail</a>
+                <a href="{% url 'edit_transaction' transaction.id %}" class = "mx-3" style="color:blue;">Edit</a>
+                <a href="{% url 'delete_transaction' transaction.id %}" class = "mx-3" style="color:red;">Delete</a>
+            </li>
+            
+        {% empty %}
+            <li>No transactions found.</li>
+        {% endfor %}
+        <a href="{% url 'export_transactions' %}" class="btn btn-success my-2"> Export to CSV</a>
+    </ul>
+    {% include 'summary.html' %}
+    <a href="{% url 'add_transaction' %}" class="btn btn-primary my-3">+ Add Transaction</a>
+{% endblock %}
