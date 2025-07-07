@@ -1,0 +1,7 @@
+
+<h2>Transaction Detail</h2>
+<p>Title: {{ transaction.title }}</p>
+<p>Amount: Rp{{ transaction.amount }}</p>
+<p>Category: {{ transaction.category }}</p>
+<p>Date: {{ transaction.date }}</p>
+<a href="{% url 'transaction_list' %}">← Back</a>

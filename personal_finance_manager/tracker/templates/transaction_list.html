@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}My Transactions{% endblock %}
+
+{% block content %}
+<h3>My Transactions</h3>
+    <ul>
+        {% for transaction in transactions %}
+            <li>
+                {{ transaction.date }} - {{ transaction.title }} - {{ transaction.category }} - Rp{{ transaction.amount|floatformat:2 }}
+                <a href="{% url 'transaction_detail' transaction.id %}"class="btn btn-sm btn-info">Detail</a>
+                <a href="{% url 'edit_transaction' transaction.id %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'delete_transaction' transaction.id %}" class="btn btn-sm btn-danger">Delete</a>
+            </li>
+            
+        {% empty %}
+            <li>No transactions found.</li>
+        {% endfor %}
+        <a href="{% url 'export_transactions' %}" class="btn btn-success my-2"> Export to CSV</a>
+    </ul>
+    {% include 'summary.html' %}
+    <a href="{% url 'add_transaction' %}" class="btn btn-primary my-3">+ Add Transaction</a>
+
+    
+
+    <h4>Transaction Filter</h4>
+    <form method="get" class="my-4">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-info">Filter</button>
+    </form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Transaction List</title>
+</head>
+
+<body>
+<div class="summary">
+    <h2>Summary</h2>
+    <ul>
+        <li><strong>Total Income:</strong> Rp{{ total_income }}</li>
+        <li><strong>Total Expense:</strong> Rp{{ total_expense }}</li>
+        <li><strong>Balance:</strong> Rp{{ balance }}</li>
+    </ul>
+</div>
+<div class="add-transaction button">
+<a href="{% url 'add_transaction' %}">
+    <button type="button">+ Add Transaction</button>
+</a>
+</div>
+<div class="transaction-list">
+    <h2>My Transactions</h2>
+    <ul>
+        {% for transaction in transactions %}
+            <li>
+                {{ transaction.date }} - {{ transaction.title }} - {{ transaction.category }} - Rp{{ transaction.amount }}
+                <a href="{% url 'delete_transaction' transaction.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Filter</button>
+</form>
+
+<ul>
+    {% for transaction in transactions %}
+        <li>{{ transaction.date }} - {{ transaction.name }} - {{ transaction.transaction_type }} - Rp{{ transaction.amount }}</li>
+    {% empty %}
+        <li>No transactions found.</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+-->
