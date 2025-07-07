@@ -20,46 +20,39 @@ A simple Django-based personal finance tracking application that allows users to
 - Others: Python Dotenv, Django ORM, Git
 
   1. Clone the repository
-   
-    
+   ```
     git clone https://github.com/yourusername/personal-finance-manager.git
     cd personal-finance-manager
-    
+   ```
+   
   2. Create a virtual environment
-
-    
+    ```
     python -m venv .venv
     source .venv/bin/activate        # On Windows: .venv\Scripts\activate
+    ```
     
-     
   3. Install dependencies
-
-    
+    ```    
     pip install -r requirements.txt
+    ```
     
-
   4. Set up environment variables
-
-    
+    ```
     Create a .env file in the project root and define:
-    
+    ```
   5. Run migrations
-
-    
+    ```
     python manage.py makemigrations
     python manage.py migrate
-    
+    ```
   6. Run the development server
     Access the app at: http://localhost:8000
-
-    
+    ```
     python manage.py runserver
+    ```
     
-
-
 ## 📁 Project Structure
-
-    
+    ```
     personal_finance_manager/
     ├── config/              # Django project settings
     ├── tracker/             # App for managing transactions
@@ -67,7 +60,7 @@ A simple Django-based personal finance tracking application that allows users to
     ├── .env                 # Environment variables
     ├── requirements.txt     # Python dependencies
     └── manage.py
-    
+    ```
 
 ## 🧠 What I Learned
   1. Structuring Django projects with reusable apps
