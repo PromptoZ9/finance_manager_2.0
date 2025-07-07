@@ -1,8 +1,8 @@
-#💰 Personal Finance Manager
+# 💰 Personal Finance Manager
 
 A simple Django-based personal finance tracking application that allows users to record, categorize, and manage their income and expenses. Built with Django and MySQL as the backend database.
 
-##📌 Features
+## 📌 Features
 
 - Add, edit, delete, and view financial transactions
 - Track income, expenses, and current balance
@@ -10,14 +10,14 @@ A simple Django-based personal finance tracking application that allows users to
 - Export transaction data to CSV
 - Responsive and simple UI with Bootstrap
 - Authentication system (optional, if implemented)
--MySQL integration using .env for secure credentials
+- MySQL integration using .env for secure credentials
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
--Backend: Django (Python)
--Database: MySQL
--Frontend: HTML, Bootstrap
--Others: Python Dotenv, Django ORM, Git
+- Backend: Django (Python)
+- Database: MySQL
+- Frontend: HTML, Bootstrap
+- Others: Python Dotenv, Django ORM, Git
 
   1. Clone the repository
    
@@ -57,7 +57,7 @@ A simple Django-based personal finance tracking application that allows users to
     
 
 
-##📁 Project Structure
+## 📁 Project Structure
 
     
     personal_finance_manager/
@@ -69,18 +69,18 @@ A simple Django-based personal finance tracking application that allows users to
     └── manage.py
     
 
-##🧠 What I Learned
-    1. Structuring Django projects with reusable apps
-    2. Using MySQL as a Django database backend
-    3. Managing environment variables securely with python-dotenv
-    4. Implementing dynamic forms, filters, and exporting to CSV
-    5. SQL basics and queries for data summaries
+## 🧠 What I Learned
+  1. Structuring Django projects with reusable apps
+  2. Using MySQL as a Django database backend
+  3. Managing environment variables securely with python-dotenv
+  4. Implementing dynamic forms, filters, and exporting to CSV
+  5. SQL basics and queries for data summaries
 
-##📌 Future Improvements
-    1. Add user authentication and profiles
-    2. Visualization with charts for spending/income
-    3. Monthly summaries
-    4. REST API integration
+## 📌 Future Improvements
+  1. Add user authentication and profiles
+  2. Visualization with charts for spending/income
+  3. Monthly summaries
+  4. REST API integration
 
 
 
