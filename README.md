@@ -4,16 +4,16 @@ A full-featured personal finance tracking web application built using Django and
 
 ## 📌 Features
 
--Multi-user support using Django's built-in authentication system
--Add, edit, delete, and view transactions
--Filter transactions by type, date range, and keyword (horizontal layout)
--Live summary dashboard: total income, total expense, and balance
--CSV export of user-specific transaction data
--MySQL database integration using environment variables (.env)
--Responsive UI using Bootstrap, with separated HTML templates per view
--Login & Register system with redirects to main dashboard after login
--Custom detail pages for each transaction (CRUD)
--Django messages framework for action feedback (add/update/delete)
+- Multi-user support using Django's built-in authentication system
+- Add, edit, delete, and view transactions
+- Filter transactions by type, date range, and keyword (horizontal layout)
+- Live summary dashboard: total income, total expense, and balance
+- CSV export of user-specific transaction data
+- MySQL database integration using environment variables (.env)
+- Responsive UI using Bootstrap, with separated HTML templates per view
+- Login & Register system with redirects to main dashboard after login
+- Custom detail pages for each transaction (CRUD)
+- Django messages framework for action feedback (add/update/delete)
 
 ## 🛠️ Tech Stack
 
@@ -82,12 +82,12 @@ A full-featured personal finance tracking web application built using Django and
     
 
 ## 🧠 What I Learned
-  1.Structuring scalable Django projects with app separation (tracker/)
-  2.Connecting Django to MySQL using mysqlclient and .env securely
-  3.Building dynamic filters and aggregate queries with Django ORM
-  4.Implementing user-based data filtering for privacy
-  5.Creating reusable and responsive templates with Bootstrap
-  6.Managing Django user sessions and redirection securely
+  1. Structuring scalable Django projects with app separation (tracker/)
+  2. Connecting Django to MySQL using mysqlclient and .env securely
+  3. Building dynamic filters and aggregate queries with Django ORM
+  4. Implementing user-based data filtering for privacy
+  5. Creating reusable and responsive templates with Bootstrap
+  6. Managing Django user sessions and redirection securely
 
 ## 📌 Future Improvements
   1. Add user authentication and profiles
