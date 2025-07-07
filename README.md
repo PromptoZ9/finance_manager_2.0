@@ -4,13 +4,16 @@ A simple Django-based personal finance tracking application that allows users to
 
 ## 📌 Features
 
-- Add, edit, delete, and view financial transactions
-- Track income, expenses, and current balance
-- Filter transactions by type, date, or keyword
-- Export transaction data to CSV
-- Responsive and simple UI with Bootstrap
-- Authentication system (optional, if implemented)
-- MySQL integration using .env for secure credentials
+-Multi-user support using Django's built-in authentication system
+-Add, edit, delete, and view transactions
+-Filter transactions by type, date range, and keyword (horizontal layout)
+-Live summary dashboard: total income, total expense, and balance
+-CSV export of user-specific transaction data
+-MySQL database integration using environment variables (.env)
+-Responsive UI using Bootstrap, with separated HTML templates per view
+-Login & Register system with redirects to main dashboard after login
+-Custom detail pages for each transaction (CRUD)
+-Django messages framework for action feedback (add/update/delete)
 
 ## 🛠️ Tech Stack
 
@@ -79,11 +82,12 @@ A simple Django-based personal finance tracking application that allows users to
     
 
 ## 🧠 What I Learned
-  1. Structuring Django projects with reusable apps
-  2. Using MySQL as a Django database backend
-  3. Managing environment variables securely with python-dotenv
-  4. Implementing dynamic forms, filters, and exporting to CSV
-  5. SQL basics and queries for data summaries
+  1.Structuring scalable Django projects with app separation (tracker/)
+  2.Connecting Django to MySQL using mysqlclient and .env securely
+  3.Building dynamic filters and aggregate queries with Django ORM
+  4.Implementing user-based data filtering for privacy
+  5.Creating reusable and responsive templates with Bootstrap
+  6.Managing Django user sessions and redirection securely
 
 ## 📌 Future Improvements
   1. Add user authentication and profiles
@@ -93,8 +97,8 @@ A simple Django-based personal finance tracking application that allows users to
 
 ##📷 Screenshots
 
-![Dashboard View](screenshots/mainpage.jpg)
-![Dashboard View](screenshots/addform.jpg)
+![Dashboard View](personal_finance_manager/screenshots/mainpage.jpg)
+![Dashboard View](personal_finance_manager/screenshots/addform.jpg)
 
 
 
