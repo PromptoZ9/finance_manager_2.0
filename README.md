@@ -91,8 +91,10 @@ A simple Django-based personal finance tracking application that allows users to
   3. Monthly summaries
   4. REST API integration
 
+##📷 Screenshots
 
-
+![Dashboard View](screenshots/mainpage.jpg)
+![Dashboard View](screenshots/addform.jpg)
 
 
 
