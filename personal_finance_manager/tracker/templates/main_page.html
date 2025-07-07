@@ -29,9 +29,9 @@
         {% for transaction in transactions %}
             <li>
                 {{ transaction.date }} - {{ transaction.title }} - {{ transaction.category }} - Rp{{ transaction.amount|floatformat:2 }}
-                <a href="{% url 'transaction_detail' transaction.id %}"class = "mx-3" style="color:rgb(0, 200, 0);">Detail</a>
-                <a href="{% url 'edit_transaction' transaction.id %}" class = "mx-3" style="color:blue;">Edit</a>
-                <a href="{% url 'delete_transaction' transaction.id %}" class = "mx-3" style="color:red;">Delete</a>
+                <a href="{% url 'transaction_detail' transaction.id %}"class = "btn btn-info my-1" >Detail</a>
+                <a href="{% url 'edit_transaction' transaction.id %}" class = "btn btn-warning mx-1" >Edit</a>
+                <a href="{% url 'delete_transaction' transaction.id %}" class = "btn btn-danger mx-1" >Delete</a>
             </li>
             
         {% empty %}
