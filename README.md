@@ -1,6 +1,6 @@
-# 💰 Personal Finance Manager
+# 💰 Personal Finance Manager — Web-Based Expense Tracker with Multi-User Support
 
-A simple Django-based personal finance tracking application that allows users to record, categorize, and manage their income and expenses. Built with Django and MySQL as the backend database.
+A full-featured personal finance tracking web application built using Django and MySQL. This upgraded version supports multi-user login, allowing each user to manage and export their own income and expense records securely. The project also implements clean UI sections and interactive forms using Bootstrap.
 
 ## 📌 Features
 
