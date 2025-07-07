@@ -1,7 +1,9 @@
 💰 Personal Finance Manager
+
 A simple Django-based personal finance tracking application that allows users to record, categorize, and manage their income and expenses. Built with Django and MySQL as the backend database.
 
 📌 Features
+
 Add, edit, delete, and view financial transactions
 
 Track income, expenses, and current balance
@@ -17,6 +19,7 @@ Authentication system (optional, if implemented)
 MySQL integration using .env for secure credentials
 
 🛠️ Tech Stack
+
 Backend: Django (Python)
 
 Database: MySQL
